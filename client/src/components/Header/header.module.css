@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.button {
+  padding: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  border: 1px solid rgb(14, 13, 13);
+  border-radius: 2px;
+}
+.arrowButton {
+  width: 20px;
+  height: 20px;
+  border: solid 1px black;
+  border-radius: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
