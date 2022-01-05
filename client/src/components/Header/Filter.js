@@ -1,10 +1,10 @@
+import styles from "./header.module.css"
 export const Filter = () => {
-
-    return (
-       <>
-      <label>Find contacts by name</label>
-      <input  />
+  return (
+    <>
+      <label>
+        <input placeholder="Search stock" className={ styles.input}/>
+      </label>
     </>
-    )
-    
-}
+  );
+};

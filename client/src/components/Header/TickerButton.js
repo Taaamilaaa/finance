@@ -1,6 +1,8 @@
+import { useState } from "react";
 import styles from "./header.module.css";
 
 export const TickerButton = ({ data }) => {
+
   return (
     <>
       <button type = "button" className={styles.button}>

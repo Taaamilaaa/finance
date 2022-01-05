@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  padding: 8px;
+  border-bottom: solid 1px black;
+}
+.item:first-child {
+  border-top: solid 1px black;
+}
+.name {
+  display: flex;
+  width: 15%;
+}
+.dataItem {
+  display: inline-block;
+  width: 100px;
+}
