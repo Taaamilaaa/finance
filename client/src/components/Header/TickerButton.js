@@ -1,13 +1,16 @@
-import { useState } from "react";
 import styles from "./header.module.css";
 
-export const TickerButton = ({ data }) => {
+// export const TickerButton = ({ data, setClass}) => {
 
-  return (
+// export const TickerButton = ({ data, current, old}) => {
+export const TickerButton = ({ data}) => {
+const profit = Number(data.price)-Number(data.change)
+return (
     <>
       <button type = "button" className={styles.button}>
         <div className={styles.arrowButton}>
-          <div>↑</div>
+          {profit>0 ? <div className={styles.greenArrowButton}>🠕</div>
+          : <div className={styles.redArrowButton}>🠗</div>}          
         </div>
         <div>
           <h5>{data.ticker}</h5>

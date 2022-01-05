@@ -1,35 +1,37 @@
 import { TickerButton } from "./TickerButton";
 import { useSelector } from "react-redux";
 
-
 import styles from "./header.module.css";
 
-export const Header = ({oldPrices, currentPrices}) => {
+// export const Header = ({ arrOfDifference }) => {
+  export const Header = ({ oldPrices, currentPrices }) => {
   const tickers = useSelector((state) => state.data.tickers);
- 
-  // eslint-disable-next-line
-  const difference = () => {
-    if (oldPrices.length !== 0 && currentPrices !== void 0) {  
-      return oldPrices.map((oldPrice) => {
-        return console.log(oldPrices[oldPrices.indexOf(oldPrice)]);
-      // const diff = Number(oldPrice) - 
-    //   return oldPrices.forEach(oldPrice => {
-    //  const diff = Number(oldPrice) - Number(currentPrice)
-    //   return  console.log(`OLD: ${oldPrice}, CURRENT: ${currentPrice}, DIFF: ${diff}`);
-    // });
-
+  // const setClass = (arrDiff,arr, el) => {
+  //   if (arrDiff !== void 0) {
+  //     const currentIndex = arr.indexOf(el);
+  //     if (arrDiff[currentIndex] > 0) {
     
-      })
-    }
+  //       return true;
+  //     }
 
-  }
-console.log(difference());
+  //     return false;
+  //   }
+  // };
   return (
     <ul className={styles.list}>
       {tickers.map((ticker) => {
+        // const index = tickers.indexOf(ticker)
+        // const current = Number(currentPrices[index])
+        // const old = Number(oldPrices[index])
+// console.log(Number(ticker.price)-Number(ticker.change) );
         return (
           <li className={styles.item} key={ticker.ticker}>
-            <TickerButton data={ticker} />
+            <TickerButton data={ticker}/>
+            {/* <TickerButton data={ticker} current={current} old = {old} /> */}
+            {/* {Number(oldPrices[index]) < Number(currentPrices[index]) 
+              ? <TickerButton data={ticker} setClass={true} />
+              : <TickerButton data={ticker} setClass={false} />}          */}
+
           </li>
         );
       })}
