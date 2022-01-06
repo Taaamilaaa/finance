@@ -8,9 +8,34 @@
 }
 .name {
   display: flex;
-  width: 15%;
+  width: 100px;
+}
+.dataItem_profit {
+  color: green;
+  display: inline-block;
+  width: 100px;
+}
+.dataItem_loss {
+  color: red;
+  display: inline-block;
+  width: 100px;
 }
 .dataItem {
   display: inline-block;
   width: 100px;
+}
+.greenArrow {
+  color: green;
+}
+.redArrow {
+  color: red;
+}
+.titleList {
+  padding: 8px;
+  display: flex;
+}
+
+.itemTitle {
+  width: 100px;
+  list-style: none;
 }
