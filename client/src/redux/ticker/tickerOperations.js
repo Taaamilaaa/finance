@@ -21,6 +21,15 @@ export const getTickers = () => dispatch => {
   } catch (error) {
     dispatch(actions.getTickersError(error));
   }
- 
+};
 
+
+export const isLoading = () => dispatch => {
+  dispatch(actions.isLoadingRequest());
+  try {
+    socket.disconnect();
+    dispatch(actions.isLoadingSuccess());
+  } catch (error) {
+    dispatch(actions.isLoadingError(error));
+  }
 };

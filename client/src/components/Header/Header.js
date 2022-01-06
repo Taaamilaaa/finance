@@ -4,7 +4,6 @@ import styles from "./header.module.css";
 
 export const Header = () => {
   const tickers = useSelector((state) => state.data.tickers);
-
   return (
     <ul className={styles.list}>
       {tickers.map((ticker) => {
