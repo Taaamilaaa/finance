@@ -10,11 +10,11 @@
   display: flex;
   justify-content: space-evenly;
   width: 150px;
-  border: 1px solid rgb(14, 13, 13);
-  border-radius: 2px;
+  border: none;
+  border-radius: 4px;
 }
 .redArrowButton {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.541);
   width: 20px;
   height: 20px;
   border: solid 1px black;
@@ -24,7 +24,7 @@
   justify-content: center;
 }
 .greenArrowButton {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.541);
   width: 20px;
   height: 20px;
   border: solid 1px black;
@@ -39,8 +39,14 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  height: 20px;
+  height: 30px;
   width: 300px;
+  border: none;
+  border-radius: 4px;
+}
+.input:focus,
+.input:hover {
+  outline: 1px solid cadetblue;
 }
 
 .text_profit {
@@ -48,4 +54,7 @@
 }
 .text_loss {
   color: red;
+}
+.text {
+  color: rgb(76, 91, 98);
 }

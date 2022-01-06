@@ -8,7 +8,6 @@ import { getTickers } from "./redux/ticker/tickerOperations";
 
 function App() {
   const [filter, setFilter] = useState("");
- 
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -20,14 +19,13 @@ function App() {
   };
   return (
     <>
-     <header className="header">
+      <header className="header">
         <Header />
         <Filter onFilterChange={onFilter} />
       </header>
       <main>
         <TickerList filter={filter} />
-          </main>
-
+      </main>
     </>
   );
 }

@@ -9,9 +9,8 @@ const socket = io('http://localhost:4000', {
 });
 
 
-export const getTickers = () => dispatch => {
-  
-      dispatch(actions.getTickersRequest());
+export const getTickers = () => dispatch => {  
+  dispatch(actions.getTickersRequest());  
   try {
     socket.emit('start').on('ticker', data => {
       dispatch(actions.getTickersSuccess(data));

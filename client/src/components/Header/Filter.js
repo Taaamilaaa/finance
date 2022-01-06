@@ -4,7 +4,6 @@ export const Filter = ({ onFilterChange }) => {
   const onChangeVal = (event) => {
     onFilterChange(event.currentTarget.value);
   };
-
   return (
     <>
       <label>

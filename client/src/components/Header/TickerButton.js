@@ -13,8 +13,8 @@ export const TickerButton = ({ data }) => {
           )}
         </div>
         <div>
-          <h5>{data.ticker}</h5>
-          <p>{data.price}</p>
+          <h5 className={styles.text}>{data.ticker}</h5>
+          <p className={styles.text}>{data.price}</p>
         </div>
         <div>
           <p className={profit ? styles.text_profit : styles.text_loss}>

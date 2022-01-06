@@ -13,5 +13,8 @@ body {
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: solid 1px black;
+}
+body {
+  background: #96afc0b4;
+  font-family: sans-serif;
 }
